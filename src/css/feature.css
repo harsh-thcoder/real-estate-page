@@ -1,0 +1,68 @@
+.features-section {
+  background-color: #f8f9fa;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 1000px;
+  width: 100%;
+  align-items: start; /* ✅ prevents blank white space issue */
+}
+
+.accordion-card {
+  border-radius: 12px !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.accordion-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.accordion-icon {
+  background-color: #001f54 !important; /* navy */
+  color: #ffd700 !important; /* gold */
+  margin-right: 16px;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.accordion-title {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  color: #222 !important;
+}
+
+.accordion-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ✅ Smooth expand/collapse animation */
+.MuiCollapse-root {
+  transition: height 0.4s ease, opacity 0.4s ease !important;
+}
+
+.MuiCollapse-entered {
+  opacity: 1;
+}
+
+.MuiCollapse-hidden {
+  opacity: 0;
+}
+
+/* ✅ Responsive: stack accordions on mobile */
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}

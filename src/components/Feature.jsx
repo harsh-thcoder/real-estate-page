@@ -11,7 +11,7 @@ import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import PercentIcon from "@mui/icons-material/Percent";
 import ReceiptLongIcon from "@mui/icons-material/ReceiptLong";
-import "../css/Feature.css";
+import "../css/feature.css";
 
 const items = [
   {

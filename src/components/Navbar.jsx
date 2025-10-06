@@ -1,12 +1,12 @@
 import "../css/navbar.css";
-// import logo from "../assets/logo.png"; // replace with your actual logo
+import logo from "../assets/logo.png"; // replace with your actual logo
 
 export default function Navbar() {
   return (
     <header className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
-          {/* <img src={logo} alt="Invest Logo" /> */}
+          <img src={logo} alt="Invest Logo" />
         </div>
         <nav>
           <ul className="navbar-links">

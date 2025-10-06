@@ -1,0 +1,156 @@
+/* ============================
+   WEALTH SECTION STYLES
+   ============================ */
+
+.wealth-section {
+  background-color: #002d72;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+/* Main container — two-column layout */
+.wealth-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* ===== LEFT SIDE (IMAGE) ===== */
+.wealth-image-wrapper {
+  position: relative;
+  flex: 1;
+  max-width: 50%;
+}
+
+.wealth-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Overlayed text directly on the image */
+.price-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #002d72;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  text-align: center;
+  letter-spacing: 0.3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== RIGHT SIDE (TEXT) ===== */
+.wealth-content {
+  flex: 1;
+  text-align: left;
+  max-width: 50%;
+}
+
+.wealth-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.wealth-title span {
+  display: block;
+  font-weight: 600;
+  color: #fff;
+}
+
+.wealth-description {
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+  max-width: 400px;
+}
+
+/* CTA Button */
+.cta-button {
+  background-color: #ffcc00;
+  color: #002d72;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #e6b800;
+}
+
+/* ============================
+   RESPONSIVE DESIGN
+   ============================ */
+
+@media (max-width: 960px) {
+  .wealth-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .wealth-image-wrapper,
+  .wealth-content {
+    max-width: 100%;
+  }
+
+  .wealth-content {
+    text-align: center;
+  }
+
+  .wealth-title {
+    font-size: 2rem;
+  }
+
+  .wealth-description {
+    margin: 0 auto 20px;
+    max-width: 100%;
+  }
+
+  .price-badge {
+    bottom: 15px;
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .wealth-title {
+    font-size: 1.8rem;
+  }
+
+  .wealth-description {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}

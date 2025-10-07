@@ -1,51 +1,85 @@
 .footer {
-  background-color: #1a1a1a;
+  background-color: #000;
   color: #fff;
-  padding: 20px 0;
-  text-align: center;
+  padding: 50px 20px 25px;
+  font-family: 'Poppins', sans-serif;
+  border-top: 2px solid #0c2d59;
+  border-bottom: 2px solid #0c2d59;
 }
 
-.footer-content {
+.footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  text-align: left; /* ✅ align everything left */
 }
 
-.footer-logo h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* ✅ aligns logo and text left */
+  justify-content: flex-start;
 }
 
-.footer-logo span {
-  color: #d4a373;
+.footer-logo-img {
+  width: 105px;
+  height: auto;
+  margin-bottom: 12px;
+  object-fit: contain;
 }
 
-.footer-text {
-  font-size: 0.9em;
-  margin-bottom: 10px;
+.footer-title {
+  font-size: 1.0rem;
+  font-weight: 600;
+  margin: 5px 0 10px;
+  color: #D1A552;
+
+}
+
+.logo-main {
+  color: #0c2d59; /* deep blue */
+}
+
+.logo-accent {
+  color: #d1a552; /* gold */
+  font-weight: 700;
+  margin: 0 3px;
+}
+
+.footer-description {
   color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 0 25px;
 }
 
-.footer-copyright {
-  font-size: 0.8em;
-  color: #999;
+.footer-divider {
+  border-top: 1px solid #1a1a1a;
+  margin: 15px 0;
+  width: 100%;
 }
 
-/* Responsive Design */
-@media (max-width: 480px) {
-  .footer-content {
-    padding: 0 10px;
+.footer-bottom {
+  text-align: left; /* ✅ ensures copyright aligns left */
+}
+
+.footer-bottom p {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsive fix */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 0 15px;
   }
 
-  .footer-logo h3 {
-    font-size: 1.2em;
+  .footer-top {
+    align-items: flex-start;
   }
 
-  .footer-text {
-    font-size: 0.8em;
-  }
-
-  .footer-copyright {
-    font-size: 0.7em;
+  .footer-description {
+    max-width: 100%;
   }
 }

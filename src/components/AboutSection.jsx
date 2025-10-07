@@ -1,24 +1,34 @@
 import React from "react";
-import house3 from "../assets/house3.png"; // replace with actual image path
 import "../css/about.css";
+import houseImage from "../assets/house6.png";
 
-export default function AboutSection() {
+export default function WealthSection() {
   return (
-    <section className="about">
-      <div className="about-image">
-        <img src={house3} alt="House" />
-      </div>
-      <div className="about-content">
-        <h2>
-          Build Generational <span className="highlight">Wealth</span> The Smart Way
-        </h2>
-        <p>
-          We help you build lasting wealth with real estate powered by cash flow, 
-          appreciation, and tax advantages.
-        </p>
-        <button className="cta-btn">
-          Get the Invest 5S Deal Brief →
-        </button>
+    <section className="wealth-section">
+      <div className="wealth-container">
+        {/* LEFT: Image */}
+        <div className="wealth-image-wrapper">
+          <img
+            src={houseImage}
+            alt="Investment Property"
+            className="wealth-image"
+          />
+          <div className="price-badge">Starting at $515K</div>
+        </div>
+
+        {/* RIGHT: Text */}
+        <div className="wealth-content">
+          <h2 className="wealth-title">
+            Build Generational <span>Wealth The Smart Way</span>
+          </h2>
+          <p className="wealth-description">
+            We help you build lasting wealth with real estate powered by cash
+            flow, appreciation, and tax advantages.
+          </p>
+          <button className="cta-button">
+            Get the Invest 5S Deal Brief →
+          </button>
+        </div>
       </div>
     </section>
   );

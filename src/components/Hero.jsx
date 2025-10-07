@@ -17,7 +17,7 @@ export default function Hero() {
         <h1>
           Ready to Grow Your <span className="highlight">Wealth?</span>
         </h1>
-        <p>"Strategic real estate investments designed for lasting wealth."</p>
+        <p>"Strategic Real Estate Investments Designed For Lasting Wealth."</p>
       </div>
     </section>
   );
